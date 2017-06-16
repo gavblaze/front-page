@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/section_settings_title">
+
+    <EditTextPreference
+        android:title="@string/section_label"
+        android:inputType="text"
+        android:key="@string/section_key"
+        android:defaultValue="@string/section_default"
+        android:selectAllOnFocus="true" />
+
+</PreferenceScreen>

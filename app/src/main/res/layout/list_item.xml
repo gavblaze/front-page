@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/layer"
+    android:layout_height="400dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
+        tools:background="#00e676"
+        android:alpha="1"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:scrollHorizontally="false"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingBottom="2dp"
+        android:typeface="normal"
+        android:textColorHighlight="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        tools:text="headline"
+       />
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headline"
+        android:scrollHorizontally="false"
+        android:textAllCaps="true"
+        android:layout_marginLeft="12dp"
+        android:textSize="10sp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:shadowColor="@android:color/white"
+        android:textColor="@android:color/white"
+        tools:text="region" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/date"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:text="date" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:text="time" />-->
+
+        <TextView
+            android:id="@+id/timeago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colorAccent"
+            tools:text="60secs ago" />
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
